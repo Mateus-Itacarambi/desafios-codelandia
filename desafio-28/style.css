@@ -327,6 +327,12 @@ footer{
     margin-bottom: 10px;
 }
 
+/* ScrollReveal*/
+
+header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noticias h2, #card-noticia, #ultimas-noticias button{
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1235px){
     main, #bem-vindo{
         height: 80vh;
@@ -471,6 +477,11 @@ footer{
 }
 
 @media screen and (max-width: 390px){
+    main{
+        height: auto;
+        padding-bottom: 10%;
+    }
+
     nav, header, #ultimas-noticias, #container-footer{
     padding: 1rem;
     }
