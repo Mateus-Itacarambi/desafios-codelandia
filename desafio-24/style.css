@@ -239,6 +239,12 @@ footer a:hover{
 }
 */
 
+/* ScrollReveal*/
+
+header h1, header .container_botoes, aside p, .trailer{
+    visibility: hidden;
+}
+
 @media screen and (max-width: 1060px){
     nav, main, footer{
         width: 100%;
