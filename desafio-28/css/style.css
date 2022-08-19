@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .pace-inactive {
+    display: none;
+  }
+  
+  .pace .pace-progress {
+    background: #DA2535;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+  }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/wallpaper.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav{
+    width: 65vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    width: 45px;
+    cursor: pointer;
+}
+
+.nav-itens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#ul-nav{
+    display: flex;
+    list-style-type: none;
+}
+
+#ul-nav a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 400;
+}
+
+#ul-nav li{
+    font-size: 1.5rem;
+    margin: 0 18px;
+}
+
+#ul-nav li:hover{
+    color: #259af3;
+}
+
+#nav-botoes{
+    margin-left: 60px;
+}
+
+#btn-entrar{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #f9f9f9;
+    padding: 10px 20px;
+    margin-right: 25px;
+    border-radius: 4px;
+}
+
+#btn-entrar:hover{
+    background-color: #0f2a4e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-vermelho{
+    background-color: #DA2535;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #f9f9f9;
+}
+
+.btn-vermelho:hover{
+    background-color: #dc4c58;
+    cursor: pointer;
+}
+
+.menu-mobile{
+    display: none;
+    cursor: pointer;
+}
+
+.container-menu{
+    background-color: #DA2535;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #f9f9f9;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.container-menu:hover{
+    background-color: #dc4c58;
+}
+
+.menu-linhas{
+    padding-top: 3px;
+}
+
+.container-menu .linha1{
+    width: 25px;
+    height: 2px;
+    background-color: #f9f9f9;
+    margin-bottom: 2px;
+    margin-left: 15px;
+    border-radius: 2px;
+}
+
+.container-menu .linha2{
+    width: 20px;
+    height: 2px;
+    background-color: #f9f9f9;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+
+
+header{
+    width: 65vw;
+    margin: auto;
+    color: #f9f9f9;
+    margin-top: 12%;
+}
+
+header h1{
+    font-size: 6rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+header p{
+    width: 340px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.italic{
+    font-style: italic;
+}
+
+#ultimo-jogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+}
+
+.time{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.placar-logo{
+    width: 80px;
+    margin: 0 25px;
+}
+
+#placar{
+    display: flex;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.placar-traco{
+    color: #979797;
+    margin: 0 10px;
+}
+
+#bem-vindo{
+    background-image: url(../img/wallapaper2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card-bem-vindo{
+    background-color: #f9f9f9;
+    width: 50%;
+    padding: 2rem;
+}
+
+#card-bem-vindo h2{
+    margin-bottom: 2rem;
+    border-left: 2px solid #DA2535;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+}
+
+#card-bem-vindo p{
+    font-size: 1.4rem;
+    color: #515151;
+    line-height: 23px;
+    letter-spacing: .1rem;
+}
+
+#btn-ler-mais{
+    border: none;
+    background-color: #f9f9f9;
+    color: #DA2535;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+#btn-ler-mais:hover{
+    cursor: pointer;
+}
+
+#ultimas-noticias{
+    width: 65vw;
+    margin: auto;
+}
+
+#ultimas-noticias h2{
+    margin: 8rem 0 4rem;
+    border-left: 2px solid #DA2535;
+    padding-left: 1rem;
+    font-size: 1.8rem;
+}
+
+#container-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+#card-noticia{
+    width: 32%;
+    margin-bottom: 1rem;
+}
+
+#card-noticia{
+    cursor: pointer;
+}
+
+#card-noticia img{
+    width: 100%;
+}
+
+#card-autor-data{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.autor{
+    color: #DA2535;
+    font-weight: 600;
+}
+
+.data{
+    color: #979797;
+}
+
+#ultimas-noticias button{
+    display: block;
+    margin: auto;
+    margin-bottom: 8rem;
+    margin-top: 4rem;
+}
+
+footer{
+    background-color: #0B1421;
+}
+
+#container-footer{
+    width: 65vw;
+    margin: auto;
+    padding-top: 40px;
+    display: flex;
+    color: #f9f9f9;
+}
+
+#footer-card{
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-titulo{
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.footer-itens a{
+    text-decoration: none;
+    color: #f9f9f9;
+    font-weight: 300;
+}
+
+.footer-itens a:hover{
+    color: #259af3;
+}
+
+.footer-itens{
+    list-style-type: none;
+}
+
+.footer-itens li{
+    margin-bottom: 10px;
+}
+
+/* ScrollReveal*/
+
+header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noticias h2, #card-noticia, #ultimas-noticias button{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1235px){
+    main, #bem-vindo{
+        height: 80vh;
+    }
+
+    nav, header, #ultimas-noticias, #container-footer{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1235px){
+    nav, header, #ultimas-noticias, #container-footer{
+        width: 85vw;
+    }
+
+    
+    #card-bem-vindo{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 945px){
+    nav, header, #ultimas-noticias, #container-footer{
+        width: 100vw;
+        padding: 0 2rem;
+    }
+
+    footer{
+        padding-top: 4rem;
+    }
+    
+    #card-bem-vindo{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 895px){
+    nav{
+        padding: 25px 25px;
+    }
+
+    #container, #ultimas-noticias, #container-footer{
+        width: 100%;
+    }
+
+    #nav-botoes{
+        margin-left: 20px;
+    }
+
+    #container-header, #container-footer{
+        padding-left: 3%;
+    }
+
+    #ultimas-noticias{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+@media screen and (max-width: 810px){
+    nav{
+        justify-content: space-between;
+    }
+
+    .nav-itens{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: block;
+    }
+
+    #card-bem-vindo{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #card-bem-vindo{
+        width: 100%;
+        margin: 0 2rem;
+    }
+
+    #container-card{
+        flex-wrap: wrap;
+    }
+
+    #card-noticia{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    #ultimas-noticias button{
+        width: 80%;
+        margin-bottom: 40px;
+    }
+
+    #container-footer{
+        justify-content: space-between;
+    }
+
+    #footer-card{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .time{
+        display: none;
+    }
+
+    header{
+        margin-top: 35%;
+    }
+    
+    header h1{
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    #card-noticia, #ultimas-noticias button{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #bem-vindo{
+        height: auto;
+        padding: 2.5rem 0;
+    }
+
+    #footer-card{
+        width: 100%;
+    }
+
+    #container-footer{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    main{
+        height: auto;
+        padding-bottom: 10%;
+    }
+
+    nav, header, #ultimas-noticias, #container-footer{
+    padding: 1rem;
+    }
+
+    header p{
+        font-size: 1.3rem;
+    }
+
+    header button{
+        width: 100%;
+    }
+
+    .placar-logo{
+        width: 50%;
+    }
+
+    #card-bem-vindo{
+        margin: 0 1rem;
+        padding: 1.5rem;
+    }
+
+    #card-bem-vindo h2, #ultimas-noticias h2{
+        font-size: 2.4rem;
+    }
+
+    #ultimas-noticias p{
+        font-size: 1.2rem;
+    }
+
+    #card-bem-vindo p, #ultimas-noticias h3{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 345px){
+    header p{
+        width: 100%;
+    }
+
+    #card-bem-vindo h2, #ultimas-noticias h2{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1600px){
+    #container, #ultimas-noticias, #container-footer{
+        width: 1000px;
+    }
+
+    .logo{
+        width: 70px;
+    }
+
+    #ul-nav li{
+        font-size: 1.8rem;
+    }
+
+    button{
+        font-size: 1.7rem;
+    }
+
+    header h1{
+        font-size: 7rem;
+    }
+
+    header p{
+        font-size: 2rem;
+    }
+
+    .placar-logo{
+        width: 100px;
+    }
+
+    #card-bem-vindo h2, #ultimas-noticias h2{
+        font-size: 2.1rem;
+    }
+
+    #card-bem-vindo p, #btn-ler-mais{
+        font-size: 1.6rem;
+    }
+
+    #card-autor-data{
+        font-size: 1.2rem;
+    }
+
+    #card-noticia h3{
+        font-size: 1.5rem;
+    }
+
+    #footer-card li{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    #card-bem-vindo{
+        width: 40%;
+    }
+    #card-bem-vindo h2{
+        font-size: 2.2rem;
+    }
+    
+    #card-bem-vindo p{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+    
+    #btn-ler-mais{
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-height: 450px){
+    main, #bem-vindo{
+        height: 140vh;
+    }
+}
