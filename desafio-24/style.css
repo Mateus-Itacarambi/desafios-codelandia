@@ -121,11 +121,6 @@ header .container_botoes{
     justify-content: start;
 }
 
-.container_texto{
-    display: flex;
-    margin: auto;
-}
-
 .icon_sino{
     margin-right: 10px;
 }
