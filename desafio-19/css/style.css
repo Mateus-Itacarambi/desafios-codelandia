@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Product Sans';
+    src: url('fonts/ProductSans-Regular.ttf') format('truetype');
+}
+
+/*
+font-family: 'Product Sans', Arial, sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Sora', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+nav {
+    background-color: #fff;
+    width: 100%;
+    height: 12vh;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+nav .container ul li {
+    list-style: none;
+    margin-left: 5em;
+}
+
+nav .container ul li a {
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #6E7275;
+    transition: .3s;
+}
+
+nav .container ul li a:hover {
+    color: #0F9AFE;
+}
+
+header {
+    width: 100%;
+    background-color: #EFF8FF;
+}
+
+header .container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 6em 0;
+}
+
+header .container .div_texto {
+    width: 60%;
+}
+
+header .container .div_texto h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 4.4em;
+    font-weight: 600;
+    color: #293145;
+    margin-bottom: 1em;
+}
+
+.btn_azul {
+    display: inline-block;
+    background-color: #0F9AFE;
+    border-radius: 2em;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: #fff;
+    padding: .8em 2em;
+    box-shadow: 1px 3px 5px rgba(19, 125, 224, 0.5);
+    transition: .5s;
+}
+
+.btn_azul:hover {
+    background-color: #003052;
+    box-shadow: 1px 3px 5px rgba(0, 42, 81, 0.5);
+}
+
+header .container .div_texto .div_img{
+    width: 40%;
+}
+
+header .container .div_img img{
+    width: 100%;
+}
+
+section#func {
+    width: 100%;
+    padding: 8em 0;
+}
+
+section#func .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#func .container h2, section#func .container .card_container .card_func h3, section#app .container .div_texto h2,section#plano .container h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 3.8em;
+    font-weight: 600;
+    color: #293145;
+    margin-bottom: 1.5em;
+}
+
+section#func .container .card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+section#func .container .card_container .card_func{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#func .container .card_container .card_func img{
+    margin: 1em auto;
+}
+
+section#func .container .card_container .card_func h3{
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: .8em auto;
+}
+
+section#func .container .card_container .card_func h3{
+    font-size: 1.6em;
+    font-weight: 700;
+    margin: 1em auto;
+}
+
+section#func .container .card_container .card_func p, section#app .container .div_texto p, section#plano .container p {
+    font-size: 1.6em;
+    text-align: center;
+    line-height: 1.6em;
+    color: #6E7275;
+}
+
+section#app  {
+    width: 100%;
+    background-color: #EFF8FF;
+    padding: 4em 0;
+}
+
+section#app  .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#app .container .div_texto {
+    width: 60%;
+}
+
+section#app .container .div_texto h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+section#app .container .div_texto p {
+    width: 400px;
+    text-align: start;
+    margin-bottom: 2.5em;
+}
+
+section#app .container .div_texto .container_botoes {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+section#app .container .div_texto .container_botoes .btn_cinza {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #293145;
+    padding: 1em 0;
+    margin-right: 2em;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+section#app .container .div_texto .container_botoes .btn_cinza:hover {
+    background-color: #0F9AFE;
+}
+
+section#app .container .div_texto .container_botoes .btn_cinza img {
+    height: 32px;
+    margin-right: 1em;
+}
+
+section#app .container .div_texto .container_botoes .btn_cinza p {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: .8em;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+section#app .container .div_texto .container_botoes .btn_cinza p span {
+    font-size: .5em;
+    font-weight: 400;
+}
+
+section#app .container .div_img {
+    display: flex;
+    justify-content: end;
+    width: 40%;
+}
+
+section#app .container .div_img img {
+    width: 85%;
+}
+
+section#plano {
+    width: 100%;
+    padding: 8em 0;
+}
+
+section#plano .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+section#plano .container h2 {
+    margin-bottom: .4em;
+}
+
+section#plano .container p {
+    width: 480px;
+    margin-bottom: 6em;
+}
+
+section#plano .container .container_card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section#plano .container .container_card p {
+    width: auto;
+    margin-bottom: 0;
+}
+
+section#plano .container .container_card .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #EFF8FF;
+    width: 32%;
+    height: 400px;
+    padding: 0 2.5em;
+    border-radius: 10px;
+}
+
+section#plano .container .container_card .card h3 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.4em;
+    font-weight: 600;
+    text-align: center;
+    color: #293145;
+}
+
+section#plano .container .container_card .card p.preco {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 4.6em;
+    font-weight: 700;
+    color: #293145;
+    line-height: normal;
+}
+
+section#plano .container .container_card .card p.preco span.reais {
+    font-size: .4em;
+    align-self: flex-start;
+    margin-top: .4em;
+}
+
+section#plano .container .container_card .card p.preco span.mes {
+    font-size: .4em;
+}
+
+section#plano .container .container_card .card .btn_azul p{
+    color: #fff;
+}
+
+section#plano .container .container_card .card .pref {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1em;
+    padding: 0;
+}
+
+section#plano .container .container_card .card .pref p {
+    display: inline;
+}
