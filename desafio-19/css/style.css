@@ -40,8 +40,8 @@ a {
 
 nav .container {
     height: 100%;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav .container ul {
@@ -62,6 +62,10 @@ nav .container ul li a {
 
 nav .container ul li a:hover {
     color: #0F9AFE;
+}
+
+nav .container .menu {
+    display: none;
 }
 
 header {
@@ -207,7 +211,8 @@ section#app .container .div_texto .container_botoes .btn_cinza {
     justify-content: center;
     background-color: #293145;
     padding: 1em 0;
-    margin-right: 2em;
+    margin-right: 1em;
+    margin-left: 1em;
     border-radius: 8px;
     transition: .5s;
 }
@@ -412,7 +417,7 @@ section#contato .filtro h2 {
 
 section#contato .filtro p {
     width: 470px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 300;
     text-align: center;
     color: #DBDBDB;
@@ -538,11 +543,267 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    header .container .div_texto h1, section#func h2, section#plano h2 {
+    header .container .div_texto h1, section#func h2, section#plano h2, section#contato .filtro h2 {
         font-size: 3.2em;
     }
 
     header .container .div_texto .btn_azul {
         font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header .container {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    header .container .div_texto {
+        justify-content: flex-start;
+    }
+
+    header .container .div_texto, header .container .div_img{
+        width: 100%;
+    }
+
+    header .container .div_img img {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    section#func .card_container {
+        flex-wrap: wrap;
+    }
+
+    section#func .card_container .card_func {
+        width: 100%;
+        margin-bottom: 5em;
+    }
+
+    section#app .container .div_img {
+        display: none;
+    }
+
+    section#app .container {
+        justify-content: center;
+        text-align: center;
+    }
+
+    section#app .container .div_texto p {
+        text-align: center;
+    }
+
+    section#app .container .div_texto .container_botoes {
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    section#plano .container_card .card {
+        width: 400px;
+        height: auto;
+    }
+
+    section#plano .container_card .card h3, section#plano .container_card .card.card.preferido h3 {
+        font-size: 3em;
+    }
+
+   section#plano .container_card .card.card.preferido h3 {
+        font-size: 3.5em;
+    }
+
+    section#plano .container_card .card p.preferido {
+        width: auto;
+        font-size: 1.5em;
+        padding: .2em 3em;
+    }
+
+    section#plano .container_card .card p.preco {
+        font-size: 6em;
+    }
+
+    section#plano .container_card .card.card.preferido {
+        margin: 4em auto;
+    }
+
+    section#plano .container_card p {
+        font-size: 1.8em;
+    }
+
+    section#plano .container_card .card .btn_azul, section#plano .container_card .card.card.preferido .btn_azul {
+        width: 70%;
+        margin-bottom: 2em;
+    }
+
+    section#app .container .div_texto h2{
+        display: block;
+    }
+
+    section#app .container .div_texto {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 605px){
+    nav .container ul {
+        display: none;
+    }
+
+    nav .container .menu {
+        display: block;
+        width: 50px;
+        border-top: 3px solid #293145;
+    }
+
+    nav .container .menu:hover {
+        cursor: pointer;
+    }
+
+    nav .container .menu::before, nav .container .menu::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 3px;
+        background-color: #293145;
+        margin-top: 6px;
+    }
+
+    nav .container .menu::after {
+        width: 25px;
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 505px){
+    section#plano , section#func, section#contato .filtro {
+        padding: 5em 2em;
+    }
+
+    section#func {
+        padding-bottom: 0;
+    }
+
+    section#plano p {
+        width: 350px;
+        margin-bottom: 3em;
+    }
+
+    section#contato .filtro p {
+        width: 350px;
+    }
+
+    section#contato .filtro .input_contato {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section#contato .filtro .input_contato input{
+        width: 100%;
+    }
+
+    section#contato .filtro input[type="submit"] {
+        margin-left: 0;
+        margin-top: 1em;
+        padding: .6em 0;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header .container .div_texto h1 {
+        font-size: 2.8em;
+    }
+
+    section#func h2, section#app .container .div_texto h2, section#plano h2, section#contato .filtro h2 {
+       font-size: 2.6em;
+    }
+
+    section#func .card_container .card_func p, section#app .container .div_texto p, section#plano p, section#plano .container_card p, section#contato .filtro p, section#contato .filtro .input_contato input, section#plano .container_card .card p.preferido{
+        font-size: 1.4em;
+    }
+
+    section#plano .container_card, section#plano .container_card .card {
+        width: 100%;
+    }
+
+    section#app .container .div_texto p {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 2em;
+    }
+
+    section#app .container .div_texto .container_botoes .btn_cinza {
+        width: 130px;
+        padding: .6em;
+        border-radius: 5px;
+    }
+
+    section#app .container .div_texto .container_botoes .btn_cinza img{
+        width: 20px;
+        height: 20px;
+    }
+
+    section#app .container .div_texto .container_botoes .btn_cinza p {
+        font-size: 1.2em;
+        text-align: start;
+        margin: 0;
+    }
+
+    section#app .container .div_texto .container_botoes .btn_cinza p span {
+        font-size: .3em;
+        font-weight: 400;
+    }
+
+    section#plano .container_card .card h3 {
+        font-size: 2.4em;
+    }
+
+    section#plano .container_card .card.card.preferido h3 {
+        font-size: 2.6em;
+    }
+
+    section#plano .container_card .card p.preco {
+        font-size: 5em;
+    }
+
+    footer {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    header .container .div_texto h1{
+        font-size: 2.5em;
+    }
+
+    header .container .div_texto .btn_azul{
+        font-size: 1.3em;
+    }
+
+    section#app .container .div_texto p, section#plano p, section#contato .filtro p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    header .container .div_texto h1, section#func h2, section#app .container .div_texto h2, section#plano h2, section#contato .filtro h2, section#plano .container_card .card h3, section#plano .container_card .card.card.preferido h3 {
+        font-size: 2em;
+     }
+
+     section#app .container .div_texto {
+        width: 100%;
+    }
+
+    section#app .container .div_texto .container_botoes .btn_cinza{
+        width: 115px;
+    }
+
+     section#plano {
+        padding: 5em 1em;
+    }
+
+    footer {
+        font-size: 1.4em;
     }
 }
