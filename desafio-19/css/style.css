@@ -117,13 +117,13 @@ section#func {
     padding: 8em 0;
 }
 
-section#func .container {
+section#func {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section#func .container h2, section#func .container .card_container .card_func h3, section#app .container .div_texto h2,section#plano .container h2 {
+section#func h2, section#func .card_container .card_func h3, section#app .container .div_texto h2,section#plano h2 {
     font-family: 'Sora', sans-serif;
     font-size: 3.8em;
     font-weight: 600;
@@ -131,37 +131,37 @@ section#func .container h2, section#func .container .card_container .card_func h
     margin-bottom: 1.5em;
 }
 
-section#func .container .card_container {
+section#func .card_container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-section#func .container .card_container .card_func{
-    width: 30%;
+section#func .card_container .card_func{
+    width: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section#func .container .card_container .card_func img{
+section#func .card_container .card_func img{
     margin: 1em auto;
 }
 
-section#func .container .card_container .card_func h3{
+section#func .card_container .card_func h3{
     font-size: 1.6em;
     font-weight: 700;
     margin: .8em auto;
 }
 
-section#func .container .card_container .card_func h3{
+section#func .card_container .card_func h3{
     font-size: 1.6em;
     font-weight: 700;
     margin: 1em auto;
 }
 
-section#func .container .card_container .card_func p, section#app .container .div_texto p, section#plano .container p {
+section#func .card_container .card_func p, section#app .container .div_texto p, section#plano p {
     font-size: 1.6em;
     text-align: center;
     line-height: 1.6em;
@@ -189,7 +189,7 @@ section#app .container .div_texto h2 {
 }
 
 section#app .container .div_texto p {
-    width: 400px;
+    width: 440px;
     text-align: start;
     margin-bottom: 2.5em;
 }
@@ -250,45 +250,41 @@ section#app .container .div_img img {
 section#plano {
     width: 100%;
     padding: 8em 0;
-}
-
-section#plano .container {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section#plano .container h2 {
+section#plano h2 {
     margin-bottom: .4em;
 }
 
-section#plano .container p {
+section#plano p {
     width: 480px;
     margin-bottom: 6em;
 }
 
-section#plano .container .container_card {
+section#plano .container_card {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
-section#plano .container .container_card p {
+section#plano .container_card p {
     width: auto;
     margin-bottom: 0;
 }
 
-section#plano .container .container_card .card {
+section#plano .container_card .card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: #EFF8FF;
-    width: 32%;
-    height: 400px;
-    padding: 0 2.5em;
+    width: 350px;
+    padding: 6em 0;
     border-radius: 10px;
 }
 
-section#plano .container .container_card .card h3 {
+section#plano .container_card .card h3 {
     font-family: 'Sora', sans-serif;
     font-size: 2.4em;
     font-weight: 600;
@@ -296,7 +292,7 @@ section#plano .container .container_card .card h3 {
     color: #293145;
 }
 
-section#plano .container .container_card .card p.preco {
+section#plano .container_card .card p.preco {
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -304,29 +300,249 @@ section#plano .container .container_card .card p.preco {
     font-weight: 700;
     color: #293145;
     line-height: normal;
+    margin: .7em 0;
 }
 
-section#plano .container .container_card .card p.preco span.reais {
+section#plano .container_card .card p.preco span.reais {
     font-size: .4em;
     align-self: flex-start;
     margin-top: .4em;
 }
 
-section#plano .container .container_card .card p.preco span.mes {
+section#plano .container_card .card p.preco span.mes {
     font-size: .4em;
 }
 
-section#plano .container .container_card .card .btn_azul p{
+section#plano .container_card .card .btn_azul {
+    display: block;
+    width: 255px;
+    font-size: 1.2em;
+    padding: .4em;
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+section#plano .container_card .card .btn_azul:hover {
+    background-color: #0F9AFE;
+}
+
+section#plano .container_card .card .btn_azul p {
+    color: #fff;
+    font-weight: 400;
+}
+
+section#plano .container_card .card.preferido {
+    background-color: #293145;
+    padding-top: 3em;
+    margin: 0 3em;
+}
+
+section#plano .container_card .card.preferido h3 {
+    font-size: 3em;
     color: #fff;
 }
 
-section#plano .container .container_card .card .pref {
-    text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 1em;
-    padding: 0;
+section#plano .container_card .card.preferido p {
+    color: #DBDBDB;
 }
 
-section#plano .container .container_card .card .pref p {
-    display: inline;
+section#plano .container_card .card.preferido p.preco {
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: .7em;
+}
+
+section#plano .container_card .card.preferido .btn_azul p {
+    color: #fff;
+}
+
+section#plano .container_card .card.preferido .btn_azul {
+    box-shadow: 1px 3px 5px rgba(0, 42, 81, 0.5);
+    margin: 0 auto;
+    margin-top: 4em;
+}
+
+section#plano .container_card .card p.preferido {
+    width: 185px;
+    display: inline-block;
+    background-color: #0F9AFE;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1.4em;
+    color: #fff;
+    padding: .15em 0;
+    border-radius: 1em;
+    margin: 1em auto;
+}
+
+section#contato {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/back_contato.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#contato img {
+    position: absolute;
+    width: 100%;
+}
+
+section#contato .filtro {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8em 0;
+    background-color: rgba(41, 49, 69, 0.7);
+}
+
+section#contato .filtro h2 {
+    font-family: 'Sora', sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: .5em;
+}
+
+section#contato .filtro p {
+    width: 470px;
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: center;
+    color: #DBDBDB;
+    margin-bottom: 4em;
+}
+
+section#contato .filtro input {
+    width: 310px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.444);
+    outline: none;
+    font-size: 1.8em;
+    color: #fff;
+    padding: .4em 0;
+}
+
+section#contato .filtro input:focus {
+    border-bottom: 2px solid #0F9AFE;
+}
+
+section#contato .filtro input::placeholder {
+    color: #fff;
+}
+
+section#contato .filtro input[type="submit"] {
+    width: 120px;
+    background-color: #0F9AFE;
+    border: 2px solid #0F9AFE;
+    border-radius: 2em;
+    padding: .3em 0;
+    margin-left: 2em;
+}
+
+section#contato .filtro input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+footer {
+    padding: 1.5em 0;
+    font-family: 'Sora', sans-serif;
+    font-size: 2em;
+    font-weight: 400;
+    color: #293145;
+    text-align: center;
+}
+
+@media screen and (max-width: 1220px) {
+    .container {
+        width: 100vw;
+        padding: 0 2em;
+    }
+
+    header .container {
+        padding: 6em 2em;
+    }
+
+    section#func {
+        padding: 8em 2em;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    section#plano .container_card {
+        flex-direction: column;
+    }
+
+    section#plano .container_card .card {
+        width: 500px;
+        height: auto;
+    }
+
+    section#plano .container_card .card h3, section#plano .container_card .card.card.preferido h3 {
+        font-size: 3.5em;
+    }
+
+   section#plano .container_card .card.card.preferido h3 {
+        font-size: 4em;
+    }
+
+    section#plano .container_card .card p.preferido {
+        width: auto;
+        font-size: 1.8em;
+        padding: .2em 3em;
+    }
+
+    section#plano .container_card .card p.preco {
+        font-size: 7em;
+    }
+
+    section#plano .container_card .card.card.preferido {
+        margin: 4em auto;
+    }
+
+    section#plano .container_card p {
+        font-size: 2em;
+    }
+
+    section#plano .container_card .card .btn_azul, section#plano .container_card .card.card.preferido .btn_azul {
+        width: 70%;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    header .container .div_texto h1 {
+        font-size: 3.8em;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    header .container .div_img {
+        width: 40%;
+    }
+
+    section#func .card_container {
+        justify-content: space-between;
+    }
+
+    section#func .card_container .card_func {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container .div_texto h1, section#func h2, section#plano h2 {
+        font-size: 3.2em;
+    }
+
+    header .container .div_texto .btn_azul {
+        font-size: 1.5em;
+    }
 }
