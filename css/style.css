@@ -299,7 +299,7 @@ header .p_verde, header h1, header p, .card{
 
 @media screen and (max-width: 770px){
     nav, main, footer{
-        width: 100vw;
+        width: 100%;
         padding: 0 2rem;
     }
 

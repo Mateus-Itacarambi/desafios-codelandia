@@ -382,7 +382,7 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
 
 @media screen and (max-width: 945px){
     nav, header, #ultimas-noticias, #container-footer{
-        width: 100vw;
+        width: 100%;
         padding: 0 2rem;
     }
 
