@@ -20,8 +20,15 @@ nav, header{
 }
 
 .container{
-    width: 65%;
+    width: 75%;
     margin: auto;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 1000;
 }
 
 nav .container{
@@ -34,7 +41,7 @@ nav .container{
     width: 40px;
     height: 40px;
     background-color: #272727;
-    margin: 3em 2em 3em 0;
+    margin: 2em 2em 2em 0;
 }
 
 nav .container .logo p{
@@ -55,7 +62,7 @@ nav .container .nav_itens ul{
 
 nav .container .nav_itens ul li{
     list-style: none;
-    margin-right: 5em;
+    margin-right: 4em;
 }
 
 nav .container .nav_itens ul li a{
@@ -81,6 +88,10 @@ nav .container .nav_itens .icones img:hover{
     cursor: pointer;
 }
 
+nav .container .menu{
+    display: none;
+}
+
 header{
     background-color: #F9F9F9;
 }
@@ -91,22 +102,24 @@ header .container{
 }
 
 header .container .div_texto{
-    width: 45%;
+    width: 50%;
 }
 
 header .container .div_img{
-    width: 55%;
+    width: 50%;
+    display: flex;
+    justify-content: end;
 }
 
 header .container .div_texto h1{
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: 600;
     color: #272727;
 }
 
 header .container .div_texto p{
-    width: 495px;
-    font-size: 1.8em;
+    width: 430px;
+    font-size: 1.6em;
     font-weight: 500;
     line-height: 1.5em;
     color: #797979;
@@ -124,24 +137,33 @@ header .container .div_texto .botoes{
 
 header .container .div_texto .botoes .btn_contato{
     background-color: #272727;
-    padding: 1.2em 3.2em;
     margin-right: 3em;
     border: 1px solid #272727;
-    transition: .3s;
+    transition: .5s;
+}
+
+header .container .div_texto .botoes .btn_contato:hover{
+    background-color: transparent;
 }
 
 header .container .div_texto .botoes .btn_contato p{
     width: auto;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 500;
     line-height: normal;
     color: #fff;
     margin: 0;
+    padding: .5em 2em;
+    transition: .5s;
+}
+
+header .container .div_texto .botoes .btn_contato p:hover{
+    color: #272727;
 }
 
 header .container .div_texto .botoes p{
     width: auto;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 500;
     line-height: normal;
     color: #272727;
@@ -154,54 +176,55 @@ header .container .div_texto .botoes p a{
 }
 
 header .container .div_img img{
- width: 100%;
+ width: 90%;
 }
 
 section.design .container{
     display: flex;
     align-items: center;
-    padding: 15em 0;
+    padding: 10em 0;
 }
 
 section.design .container .div_img{
-    width: 45%;
+    width: 50%;
 }
 
 section.design .container .div_img .sombra{
+    display: block;
     background-color: #272727;
-    width: calc(100% - 5em);
-    height: 476px;
+    width: 70%;
+    padding-bottom: 65%;
     position: relative;
 }
 
 section.design .container .div_img .sombra img{
     width: 100%;
-    height: 476px;
+    height: 100%;
     position: absolute;
     right: -5em;
     top: 5em;
 }
 
 section.design .container .div_texto{
-    width: 55%;
-    padding-left: 10em;
+    width: 50%;
 }
 
 section.design .container .div_texto .texto_design{
     background-color: #272727;
     width: 100%;
-    padding: 3em;
+    padding: 2.5em;
     margin-bottom: 2em;
 }
 
 section.design .container .div_texto .texto_design h2{
-    font-size: 2.8em;
+    font-size: 2.6em;
     font-weight: 600;
     color: #fff;
 }
 
 section.design .container .div_texto .texto_design p{
-    font-size: 1.6em;
+    width: 420px;
+    font-size: 1.4em;
     font-weight: 500;
     line-height: 1.5em;
     color: #fff;
@@ -210,7 +233,7 @@ section.design .container .div_texto .texto_design p{
 
 section.design .container .div_texto a{
     text-decoration: underline;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 500;
     color: #272727;
 }
@@ -219,6 +242,9 @@ section#galeria{
     width: 100%;
     background-color: #F9F9F9;
     padding: 5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 section#galeria .container{
@@ -228,14 +254,14 @@ section#galeria .container{
 }
 
 section#galeria .container h2{
-    font-size: 3.2em;
+    font-size: 3em;
     font-weight: 600;
     color: #272727;
 }
 
 section#galeria .container p{
     width: 770px;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 500;
     color: #797979;
     text-align: center;
@@ -243,9 +269,12 @@ section#galeria .container p{
 }
 
 section#galeria .container .div_imgs{
-    width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+section#galeria .container .div_imgs img{
+    width: 95%;
 }
 
 section#contato{
@@ -256,15 +285,16 @@ section#contato{
 }
 
 section#contato h2{
-    font-size: 3.2em;
+    font-size: 3em;
     font-weight: 600;
     color: #272727;
 }
 
 section#contato p{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 500;
     color: #797979;
+    text-align: center;
     margin: 1.2em 0 1.8em 0;
 }
 
@@ -272,6 +302,12 @@ section#contato .btn_contato p{
     color: #272727;
     padding: .6em 2em;
     border: 1px solid #272727;
+    transition: .5s;
+}
+
+section#contato .btn_contato p:hover{
+    color: #fff;
+    background-color: #272727;
 }
 
 footer{
@@ -292,7 +328,7 @@ footer .container .img_logo{
 }
 
 footer .container ul{
-    margin-right: 13em;
+    margin-right: 10em;
 }
 
 footer .container li{
@@ -301,13 +337,261 @@ footer .container li{
 }
 
 footer .container li h3{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
     color: #272727;
 }
 
 footer .container li a{
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 400;
     color: #272727;
+}
+
+footer .container li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 1600px) {
+    header .container .div_texto h1{
+        font-size: 4em;
+    }
+
+    header .container .div_texto p, header .container .div_texto .botoes p, section.design .container .div_texto a, section#galeria .container p, section#contato p, footer .container li h3, footer .container li a{
+        font-size: 1.8em;
+    }
+
+    section.design .container .div_texto .texto_design h2{
+        font-size: 2.8rem;
+    }
+
+    section.design .container .div_texto .texto_design p{
+        width: 480px;
+        font-size: 1.6rem;
+    }
+
+    section#galeria .container h2, section#contato h2{
+        font-size: 3.2em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .container{
+        width: 97%;
+    }
+
+    header .container .div_img img{
+        width: 85%;
+       }
+}
+
+@media screen and (max-width: 935px) {
+    .container{
+        width: 97%;
+    }
+
+    nav .container .logo p{
+        font-size: 2em;
+    }
+
+    nav .container .nav_itens ul li a{
+        font-size: 1.6em;
+    }
+
+    header .container .div_texto h1{
+        font-size: 3em;
+    }
+
+    section.design .container .div_img{
+        width: 40%;
+    }
+
+    section.design .container .div_texto{
+        width: 60%;
+    }
+
+    footer .container li h3, footer .container li a{
+        font-size: 1.4em;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    header .container .div_texto h1{
+        font-size: 2.6em;
+    }
+
+    header .container .div_texto p{
+        font-size: 1.4em;
+        width: 400px;
+    }
+
+    section.design .container .div_texto .texto_design h2, section#galeria .container h2, section#contato h2{
+        font-size: 2.2em;
+    }
+
+    section.design .container .div_texto .texto_design p{
+        font-size: 1.2em;
+    }
+
+    section.design .container .div_texto a, section#contato p, header .container .div_texto .botoes p, header .container .div_texto .botoes .btn_contato p{
+        font-size: 1.4em;
+    }
+
+    section#galeria .container p{
+        font-size: 1.4em;
+        width: 600px;
+    }
+
+    footer .container ul{
+        margin-right: 8em;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    header .container .div_img, section.design .container .div_img{
+        display: none;
+    }
+
+    header .container, section.design .container{
+        padding: 8em 0;
+    }
+
+    header .container .div_texto{
+        width: 100%;
+    }
+
+    header .container .div_texto h1{
+        font-size: 3.4em;
+    }
+
+    header .container .div_texto p{
+        font-size: 1.8em;
+        width: 400px;
+    }
+
+    header .container .div_texto .botoes p, header .container .div_texto .botoes .btn_contato p{
+        font-size: 1.8em;
+    }
+
+    section.design .container{
+        justify-content: center;
+    }
+
+    section.design .container .div_texto{
+        width: auto;
+    }
+
+    section.design .container .div_texto .texto_design{
+        width: 420px;
+    }
+
+    section.design .container .div_texto .texto_design p{
+        width: auto;
+    }
+
+    section.design .container .div_texto a{
+        text-align: center;
+    }
+
+    footer .container ul{
+        margin-right: 5em;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    nav .container .nav_itens, footer .container .img_logo{
+        display: none;
+    }
+
+    nav .container .menu{
+        display: block;
+        width: 50px;
+        border-top: 3px solid #272727;
+    }
+
+    nav .container .menu::before{
+        display: block;
+        content: "";
+        height: 3px;
+        background-color: #272727;
+        margin-top: 6px;
+    }
+
+    nav .container .menu::after{
+        display: block;
+        content: "";
+        width: 30px;
+        height: 3px;
+        background-color: #272727;
+        margin-top: 6px;
+        margin-left: 20px;
+    }
+
+    section#galeria .container p{
+        width: auto;
+    }
+
+    section#galeria .container .div_imgs{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section#galeria .container .div_imgs img{
+        margin-bottom: 2em;
+        width: 100%;
+    }
+
+    footer .container{
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer .container ul{
+        margin: .5em;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    header .container .div_texto h1{
+        font-size: 2.6em;
+    }
+
+    header .container .div_texto p{
+        font-size: 1.4em;
+        width: 285px;
+    }
+
+    header .container .div_texto .botoes p, header .container .div_texto .botoes .btn_contato p{
+        font-size: 1.4em;
+    }
+
+    section.design .container .div_texto .texto_design{
+        width: 100%;
+        padding: 1.2em;
+    }
+}
+
+@media screen and (max-width: 335px) {
+    header .container .div_texto h1{
+        font-size: 2.2em;
+    }
+
+    header .container .div_texto p{
+        width: 100%;
+    }
+
+    header .container .div_texto .botoes .btn_contato p{
+        padding: 0.5em 1em;
+    }
+
+    header .container .div_texto .botoes .btn_contato{
+        margin-right: 1em;
+    }
 }
