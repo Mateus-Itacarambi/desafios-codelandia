@@ -1,0 +1,672 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*
+font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: #292929;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5em 0;
+}
+
+.container nav .nav-itens{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container nav p.logo, .container h2, .container h3,.container .div-mais-populares .container-card .card p.preco, .container h4, footer p.logo{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container nav p.logo{
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.container nav p.logo span{
+    color: #DA2535;
+}
+
+.container nav ul, .container nav .btn-entrar, .container .div-comida-oriental p, .container .div-comida-oriental .btn-cardapio, .container .div-forma-tradicional p, .container .div-mais-populares .container-card .card p, .container .div-comentarios .container-card .card p, .container .div-localizacao .input-busca .btn-buscar, .container .div-localizacao .input-busca input, footer ul{
+    font-family: 'Inter', sans-serif;
+}
+
+.container nav ul{
+    display: flex;
+}
+
+
+.container nav ul li, .container nav .btn-entrar{
+    font-size: 2.4em;
+    font-weight: 600;
+}
+
+.container nav ul li{
+    border-bottom: 2px solid #fff;
+}
+
+.container nav ul li:nth-child(2){
+    margin: 0 2.5em;
+}
+
+.container nav ul li:hover{
+    border-bottom: 2px solid #DA2535;
+}
+
+
+.container nav .btn-entrar{
+    border: 1px solid #292929;
+    border-radius: 5px;
+    padding: .1em 1.5em;
+    margin-left: 2.5em;
+    transition: .3s;
+}
+
+.container nav .btn-entrar:hover{
+    cursor: pointer;
+    background-color: #DA2535;
+    border: 1px solid #DA2535;
+    color: #fff;
+}
+
+.container nav .menu{
+    display: none;
+}
+
+.container .div-comida-oriental{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 0;
+}
+
+.container .div-comida-oriental .div-texto{
+    width: 500px;
+}
+
+.container h2{
+    font-size: 4.8em;
+    font-weight: 600;
+}
+
+.container .div-comida-oriental .div-texto p, .container .div-forma-tradicional p{
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.container .div-comida-oriental .div-texto .btn-cardapio{
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #DA2535;
+    background-color: #DA2535;
+    border-radius: 5px;
+    padding: .3em 3em;
+    margin-top: 1em;
+    transition: .3s;
+}
+
+.container .div-comida-oriental .div-texto .btn-cardapio:hover{
+    cursor: pointer;
+    color: #292929;
+    border: 1px solid #292929;
+    background-color: transparent;
+}
+
+.container .div-forma-tradicional{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 0;
+}
+
+.container .div-forma-tradicional .div-texto{
+    width: 500px;
+}
+
+.container .div-forma-tradicional p a{
+    font-weight: 500;
+    color: #DA2535;
+    text-decoration: underline;
+}
+
+.container .div-mais-populares{
+    width: 100%;
+}
+
+.container .div-mais-populares h2{
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 3.8em;
+}
+
+.container .div-mais-populares .container-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .div-mais-populares .container-card .card{
+    width: 32%;
+    padding-bottom: 38%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    position: relative;
+}
+
+.container .div-mais-populares .container-card .card img{
+    width: 85%;
+    position: absolute;
+    top: -28%;
+}
+
+.container .div-mais-populares .container-card .card .card-texto{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.container .div-mais-populares .container-card .card .card-texto h3{
+    font-size: 3.2em;
+    font-weight: 500;
+}
+
+.container .div-mais-populares .container-card .card .card-texto p{
+    font-size: 1.8em;
+    font-weight: 400;
+    margin: 1em 0;
+}
+
+.container .div-mais-populares .container-card .card .card-texto p.preco{
+    font-size: 3.2em;
+    font-weight: 500;
+}
+
+.container .div-comentarios{
+    width: 100%;
+    padding-top: 8em;
+}
+
+.container .div-comentarios .container-card{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+.container .div-comentarios .container-card .card{
+    background-color: #F3F3F3;
+    width: 49.3%;
+    border-radius: 10px;
+    padding: 2.5em;
+}
+
+.container .div-comentarios .container-card .card h4{
+    font-size: 3.2em;
+    font-weight: 500;
+    margin-top: .5em;
+}
+
+.container .div-comentarios .container-card .card p{
+    font-size: 2.4em;
+    font-weight: 400;
+    margin: .8em 0;
+    margin-right: 3em;
+}
+
+.container .div-comentarios .container-card .card .avaliacao{
+    width: 95px;
+    height: 18px;
+    background-image: url(../img/estrela.png);
+}
+
+.container .div-localizacao{
+    width: 100%;
+    padding-top: 8em;
+}
+
+.container .div-localizacao h2{
+    margin-bottom: .6em;
+}
+
+.container .div-localizacao img{
+    width: 100%;
+}
+
+.container .div-localizacao .input-busca{
+    max-width: 850px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 4em auto;
+    border-radius: 5px;
+}
+
+.container .div-localizacao .input-busca .mapa-pin{
+    width: 6%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #292929;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.container .div-localizacao .input-busca .mapa-pin img{
+    width: 30px;
+    display: block;
+    margin: auto;
+}
+
+.container .div-localizacao .input-busca input{
+    width: 75%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-right: 1em;
+    border-top: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    font-size: 2.4em;
+    font-weight: 400;
+}
+
+input[type="search" i]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/fechar.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+input[type="search" i]::-webkit-search-cancel-button:hover{
+    cursor: pointer;
+}
+
+.container .div-localizacao .input-busca .btn-buscar{
+    width: 19%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #DA2535;
+    background-color: #DA2535;
+    font-size: 2.4em;
+    transition: .3s;
+}
+
+.container .div-localizacao .input-busca .btn-buscar p{
+    color: #fff;
+}
+
+.container .div-localizacao .input-busca .btn-buscar img{
+    display: none;
+}
+
+.container .div-localizacao .input-busca .btn-buscar:hover{
+    cursor: pointer;
+    background-color: hwb(355 15% 15% / 0.82);
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    padding: 5em 0;
+}
+
+footer p.logo{
+    font-size: 4em;
+    font-weight: 700;
+    margin-right: 1em;
+}
+
+footer p.logo span{
+    color: #DA2535;
+}
+
+footer ul:nth-child(3){
+    margin: 0 13em;
+}
+
+footer ul li{
+    margin-bottom: 1em;
+}
+
+footer ul li h4{
+    font-size: 3.2em;
+    font-weight: 500;
+}
+
+footer ul li a{
+    font-size: 1.8em;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1366px) {
+    .container{
+        max-width: 1000px;
+    }
+
+    .container nav p.logo, footer p.logo{
+        font-size: 3.6em;
+    }
+
+    .container nav ul li, .container nav .btn-entrar{
+        font-size: 2em;
+    }
+
+    .container h2{
+        font-size: 4.4em;
+    }
+
+    .container .div-comida-oriental .div-texto p, .container .div-forma-tradicional p, .container .div-comida-oriental .div-texto .btn-cardapio, .container .div-comentarios .container-card .card p, .container .div-localizacao .input-busca input, .container .div-localizacao .input-busca .btn-buscar{
+        font-size: 2em;
+    }
+
+    .container .div-comida-oriental .div-texto p{
+        width: 430px;
+    }
+
+    .container .div-comida-oriental img{
+        width: 35%;
+    }
+
+    .container .div-forma-tradicional img{
+        width: 50%;
+    }
+
+    .container .div-forma-tradicional .div-texto{
+        width: 42%;
+    }
+
+    .container .div-mais-populares .container-card .card .card-texto h3, .container .div-mais-populares .container-card .card .card-texto p.preco, .container .div-comentarios .container-card .card h4, footer ul li h4{
+        font-size: 2.8em;
+    }
+
+    .container .div-mais-populares .container-card .card .card-texto p, footer ul li a{
+        font-size: 1.4em;
+    }
+
+    .container .div-comentarios .container-card .card img{
+        width: 20%;
+    }
+
+    .container .div-comentarios .container-card .card p{
+        margin-right: 0;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .container{
+        padding: 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .container .div-mais-populares .container-card{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .container .div-mais-populares .container-card .card{
+        width: 312px;
+        height: 380px;
+    }
+
+    .container .div-mais-populares .container-card .card:nth-child(3){
+        margin-top: 12em;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .container .div-comida-oriental .div-texto{
+        width: 600px;
+        margin: auto;
+    }
+
+    .container .div-comida-oriental img{
+        display: none;
+    }
+
+    .container .div-forma-tradicional{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container .div-forma-tradicional img{
+        width: 600px;
+        margin-bottom: 3em;
+    }
+
+    .container .div-forma-tradicional .div-texto{
+        width: 400px;
+        text-align: center;
+    }
+
+    .container .div-comentarios .container-card{
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+    .container .div-comentarios .container-card .card {
+        width: 600px;
+    }
+
+    .container .div-comentarios .container-card .card:nth-child(1) {
+        margin-bottom: 4em;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    footer p.logo{
+        width: 100%;
+        margin-bottom: .6em;
+    } 
+}
+
+@media screen and (max-width: 750px) {
+    .container nav .nav-itens{
+        display: none;
+    }
+
+    .container nav .menu{
+        display: block;
+        width: 50px;
+        border-top: 3px solid #292929;
+    }
+
+    .container nav .menu::after{
+        display: block;
+        content: "";
+        height: 3px;
+        background-color: #292929;
+        margin-top: 6px;
+    }
+
+    .container nav .menu::before{
+        display: block;
+        content: "";
+        height: 3px;
+        background-color: #292929;
+        margin-top: 6px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .container .div-comida-oriental .div-texto{
+        width: 100%;
+    }
+
+    .container .div-forma-tradicional img{
+        width: 100%;
+    }
+
+    .container .div-comida-oriental .div-texto .btn-cardapio{
+        display: block;
+        padding: .7em 0;
+        text-align: center;
+    }
+
+    .container .div-mais-populares .container-card .card:nth-child(2){
+        margin-top: 13em;
+    }
+}
+
+@media screen and (max-width: 595px) {
+    .container nav p.logo, footer p.logo{
+        font-size: 1.8em;
+    }
+
+    .container h2{
+        font-size: 3.2em;
+    }
+
+    .container .div-comida-oriental .div-texto p{
+        font-size: 1.6em;
+        width: 350px;
+    }
+
+    .container .div-comida-oriental .div-texto p, .container .div-forma-tradicional p, .container .div-comida-oriental .div-texto .btn-cardapio, .container .div-comentarios .container-card .card p, .container .div-localizacao .input-busca input, .container .div-localizacao .input-busca .btn-buscar{
+        font-size: 1.6em;
+    }
+
+    .container .div-mais-populares .container-card .card .card-texto h3, .container .div-mais-populares .container-card .card .card-texto p.preco, footer ul li h4{
+        font-size: 2.4em;
+    }
+
+    .container .div-comentarios .container-card .card h4{
+        font-size: 1.8em;
+    }
+
+    .container .div-comentarios .container-card .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container .div-localizacao .input-busca .mapa-pin{
+        width: 10%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .container .div-localizacao .input-busca .mapa-pin img{
+        width: 20px;
+    }
+
+    .container .div-localizacao .input-busca input{
+        width: 80%;
+    }
+
+    .container .div-localizacao .input-busca .btn-buscar {
+        width: 10%;
+        border-radius: 0 15px 15px 0;
+    }
+
+    .container .div-localizacao .input-busca .btn-buscar p{
+        display: none;
+    }
+
+    .container .div-localizacao .input-busca .btn-buscar img{
+        display: block;
+        width: 20px;
+    }
+
+    footer ul li h4{
+        font-size: 1.6em;
+    }
+
+    footer ul:nth-child(3){
+        margin-right: 8em;
+    }
+}
+
+@media screen and (max-width: 495px) {
+    footer ul:nth-child(3){
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container .div-comida-oriental .div-texto p, .container .div-comentarios .container-card .card p{
+        width: auto;
+    }
+
+    footer ul{
+        display: block;
+        width: 100%;
+    }
+
+    footer ul:nth-child(3){
+        margin: 1.5em 0;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .container .div-mais-populares .container-card .card{
+        width: 100%;
+        height: auto;
+        padding-bottom: 120%;
+    }
+
+    .container .div-mais-populares .container-card .card img{
+        width: 80%;
+    }
+
+    .container .div-comentarios .container-card .card{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+
+    .container .div-localizacao .input-busca input{
+        font-size: 1.4em;
+        padding: 0;
+    }
+
+    input[type="search" i]::-webkit-search-cancel-button{
+        width: 10px;
+        height: 10px;
+        background-size: 10px 10px;
+        padding-right: 5px;
+    }
+}
