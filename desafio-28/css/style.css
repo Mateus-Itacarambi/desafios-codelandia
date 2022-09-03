@@ -53,6 +53,7 @@ nav{
     display: flex;
     align-items: center;
     margin: auto;
+    z-index: 1000;
 }
 
 .logo{
@@ -423,12 +424,77 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
         justify-content: space-between;
     }
 
+    nav.active{
+        background-color: #0B1421;
+        transition: 0s;
+    }
+
     .nav-itens{
-        display: none;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: calc(15vh - 1px);
+        right: 0;
+        background-color: #0B1421;
+        height: 0;
+        z-index: 999;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    .nav-itens #ul-nav{
+        display: block;
+    }
+
+    nav.active .nav-itens{
+        height: calc(85vh + 1px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    nav.active .nav-itens #ul-nav{
+        display: block;
+    }
+
+    #ul-nav li{
+        padding: 1em 0;
+        margin: 0 1em;
+        border-bottom: 1px solid #0f2a4e;
+    }
+
+    #nav-botoes{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.5em 0;
+        margin: 0;
+    }
+
+    #btn-entrar{
+        margin: 0;
     }
 
     .menu-mobile{
         display: block;
+    }
+
+    nav .menu-mobile .container-menu .menu-linhas{
+        position: relative;
+
+    }
+
+    nav.active .menu-mobile .container-menu .menu-linhas .linha2{
+        display: none;
+    }
+
+    nav.active .menu-mobile .container-menu .menu-linhas .linha1:nth-child(1){
+        transform: rotate(135deg);
+    }
+
+    nav.active .menu-mobile .container-menu .menu-linhas .linha1:nth-child(3){
+        transform: rotate(-135deg);
+        position: absolute;
+        top: 3px;
     }
 
     #card-bem-vindo{
