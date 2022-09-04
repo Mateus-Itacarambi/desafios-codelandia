@@ -275,12 +275,6 @@ footer .container_copy p.p_copy a:hover{
     color: #873EFF;
 }
 
-/*ScrollReveal*/
-
-header .p_verde, header h1, header p, .card{
-    visibility: hidden;
-}
-
 @media screen and (max-width: 870px){
     .container_cards .card:hover{
     transform: scale(1.02);
