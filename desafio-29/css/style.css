@@ -40,10 +40,14 @@ body::-webkit-scrollbar-thumb{
 
 .container nav{
     width: 100%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2em 0;
+}
+
+.container nav .nav-itens{
+    display: flex;
 }
 
 .container nav p.logo, .container h2{
@@ -61,6 +65,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     font-size: 1.8em;
     font-weight: 500;
+    justify-self: end;
 }
 
 .container nav ul li{
@@ -76,7 +81,7 @@ body::-webkit-scrollbar-thumb{
     border-bottom: 2px solid #00A3FF;
 }
 
-.container nav ul li input{
+.container nav input{
     font-size: 1em;
     padding: .4em 1em;
     border: 2px solid transparent;
@@ -85,11 +90,11 @@ body::-webkit-scrollbar-thumb{
     background-color: #151B26;
 }
 
-.container nav ul li input:focus{
+.container nav input:focus{
     border: 2px solid #00A3FF;
 }
 
-.container nav ul li input::placeholder{
+.container nav input::placeholder{
     color: #fff;
 }
 
@@ -297,8 +302,34 @@ footer{
     }
 
     .container nav ul{
-        display: none;
-        justify-self: flex-end;
+        display: block;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 100%;
+        height: 0;
+        background-color: #06090F;
+        padding: 0 .6em;
+        z-index: 1000;
+        overflow-y: hidden;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .container nav.active ul{
+        overflow-y: auto;
+        visibility: visible;
+        height: 90vh;
+    }
+
+    .container nav ul li{
+        margin: 0;
+        padding: .5em 0;
+    }
+
+    .container nav input{
+       width: 100%;
+       border-radius: 0;
     }
 
     .container nav .mobile{
@@ -307,7 +338,7 @@ footer{
     }
 
     .container nav .mobile .busca{
-        margin-right: 3em;
+        margin-right: 16px;
     }
 
     .container nav .menu{
@@ -316,12 +347,22 @@ footer{
         border-top: 3px solid #fff;
     }
 
+    .container nav.active .menu{
+        border-top: 3px solid transparent;
+    }
+
     .container nav .menu::after{
         display: block;
         content: "";
         height: 3px;
         background-color: #fff;
         margin-top: 5px;
+        transition: .3s;
+    }
+
+    .container nav.active .menu::after{
+        margin-top: -3px;
+        transform: rotate(135deg);
     }
 
     .container nav .menu::before{
@@ -330,6 +371,12 @@ footer{
         height: 3px;
         background-color: #fff;
         margin-top: 5px;
+        transition: .3s;
+    }
+
+    .container nav.active .menu::before{
+        margin-top: 0;
+        transform: rotate(-135deg);
     }
 
     .container .ult-novidades h2, .container .ult-atualizacoes h2, .container .animes-recentes h2{
@@ -397,6 +444,10 @@ footer{
         width: 150px;
         height: 40px;
     }
+
+    .container nav.busca input{
+        width: calc(100% - 220px);
+    }
 }
 
 @media screen and (max-width: 560px) {
@@ -432,6 +483,10 @@ footer{
 
     .container .animes-recentes .container-card .card:nth-child(5), .container .animes-recentes .container-card .card:nth-child(6){
         display: block;
+    }
+
+    .container nav.busca input{
+        width: calc(100% - 118px);
     }
 }
 
