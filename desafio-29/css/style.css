@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb{
     color: #fff;
 }
 
-.container nav .mobile{
+.container nav .menu{
     display: none;
 }
 
@@ -317,7 +317,7 @@ footer{
     }
 
     .container nav.active ul{
-        overflow-y: auto;
+        overflow-y: visible;
         visibility: visible;
         height: 90vh;
     }
@@ -339,6 +339,16 @@ footer{
 
     .container nav .mobile .busca{
         margin-right: 16px;
+    }
+
+    .container nav .menu{
+        display: block;
+        width: 40px;
+        border-top: 3px solid #fff;
+    }
+
+    .container nav .menu:hover{
+        cursor: pointer;
     }
 
     .container nav .menu{
