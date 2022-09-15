@@ -487,6 +487,10 @@ footer{
         display: none;
     }
 
+    .container .ult-atualizacoes .container-card.active .card{
+        display: block;
+    }
+
     .container .ult-atualizacoes .btn-ver-mais{
         width: 100%;
     }
