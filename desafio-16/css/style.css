@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --salmao: #F7C7B9;
+    --salmaoClaro: rgba(218, 37, 52, 0.16);
+    --preto: #161212;
+    --cinza: #404040;
+    --cinzaClaro: #8D8D8D;
+    --branco: #F9F9F9;
+    --vermelho: #DA2535;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: var(--preto);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--salmao);
+}
+
+h1, h2 {
+    font-size: 4.8em;
+    line-height: 1.1em;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1.6em;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 1em;
+}
+
+nav {
+    width: 100%;
+    height: 8em;
+}
+
+nav .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+nav .container ul li {
+    font-size: 1.6em;
+    font-weight: 500;
+    margin-left: 2.5em;
+}
+
+nav .container ul li a:hover{
+    text-decoration: underline;
+}
+
+nav .container .menu {
+    display: none;
+}
+
+main .container {
+    height: 545px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container .texto {
+    max-width: 440px;
+    width: 100%;
+}
+
+main .container .texto h1 {
+    font-weight: 600;
+}
+
+main .container .texto p {
+    font-weight: 500;
+    color: var(--cinza);
+    margin: 1.5em 0;
+}
+
+main .container .texto button, #doacao .container .texto button {
+    background-color: var(--vermelho);
+    font-size: 1.6em;
+    font-weight: 600;
+    color: var(--branco);
+    padding: .8em 2em .5em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+main .container .texto button img, #doacao .container .texto button img {
+    margin-right: .5em;
+    padding-bottom: 4px;
+}
+
+main .container .imagem img{
+    max-width: 600px;
+    width: 100%;
+}
+
+#acessorios {
+    background-color: var(--branco);
+    padding: 5em 0;
+}
+
+#acessorios .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#acessorios .container p:nth-child(2) {
+    max-width: 470px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--cinza);
+    padding: 1em 0 2.5em;
+}
+
+#acessorios .container .container-card {
+    display: flex;
+}
+
+#acessorios .container .container-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#acessorios .container .container-card .card {
+    width: 200px;
+    text-align: center;
+}
+
+#acessorios .container .container-card .card img {
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#acessorios .container .container-card .card img:hover {
+    transform: scale(1.1);
+}
+
+#acessorios .container .container-card .card h3 {
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: .5em;
+}
+
+#acessorios .container .container-card .card p {
+    color: var(--cinzaClaro);
+}
+
+#doacao .container {
+    padding: 5em 1em;
+    align-items: center;
+}
+
+#doacao .container .imagem, #doacao .container .texto {
+    width: 50%;
+}
+
+#doacao .container .imagem img {
+    max-width: 400px;
+    width: 100%;
+}
+
+#doacao .container .texto {
+    max-width: 460px;
+    width: 100%;
+}
+
+#doacao .container .texto p {
+    margin: 1em 0 1.5em;
+}
+
+footer {
+    height: 10em;
+    background-color: var(--branco);
+}
+
+footer .container {
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container ul {
+    display: flex;
+}
+
+footer .container ul li {
+    display: flex;
+    padding: .7em;
+    background-color: var(--salmaoClaro);
+    border-radius: 50%;
+    margin-left: 2.5em;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 880px) {
+        main .container {
+            height: 480px;
+        }
+
+    main .container .imagem img {
+        display: none;
+    }
+
+    main .container .texto {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    main .container .texto button {
+        max-width: 440px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #acessorios .container .container-card {
+        justify-content: center;
+    }
+
+    #acessorios .container .container-card .card {
+        margin: 2em 5em;
+    }
+
+    #doacao .container .imagem {
+        display: none;
+    }
+
+    #doacao .container .texto {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #doacao .container .texto button {
+        max-width: 460px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 625px) {
+    nav .container ul {
+        display: none;
+    }
+
+    nav .container .menu {
+        display: block;
+        width: 45px;
+        border-top: 3px solid var(--preto);
+    }
+
+    nav .container .menu::before {
+        display: block;
+        content: "";
+        width: 45px;
+        height: 3px;
+        background-color: var(--preto);
+        margin-top: 5px;
+    }
+
+    nav .container .menu::after {
+        display: block;
+        content: "";
+        width: 25px;
+        height: 3px;
+        background-color: var(--preto);
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    main .container {
+        height: auto;
+        padding: 5em 1em;
+    }
+
+    h1, h2 {
+        font-size: 3.2em;
+    }
+
+    p, #acessorios .container .container-card .card h3 {
+        font-size: 1.4em;
+    }
+
+    main .container .texto button, #doacao .container .texto button {
+        font-size: 1.4em;
+    }
+
+    #acessorios .container .container-card .card img {
+        width: 85%;
+    }
+
+    #acessorios .container .container-card .card p {
+        font-size: 1.2em;
+    }
+
+    footer .container img {
+        display: none;
+    }
+
+    footer .container ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer .container ul li {
+        margin: 0;
+    }
+
+    footer .container ul li img {
+        display: block;
+    }
+}
