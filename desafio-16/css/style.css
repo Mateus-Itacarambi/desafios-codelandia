@@ -275,6 +275,7 @@ footer .container ul li {
         display: block;
         width: 45px;
         border-top: 3px solid var(--preto);
+        cursor: pointer;
     }
 
     nav .container .menu::before {
@@ -284,6 +285,7 @@ footer .container ul li {
         height: 3px;
         background-color: var(--preto);
         margin-top: 5px;
+        transition: .3s;
     }
 
     nav .container .menu::after {
@@ -294,6 +296,75 @@ footer .container ul li {
         background-color: var(--preto);
         margin-top: 5px;
         margin-left: 20px;
+        transition: .3s;
+    }
+
+    nav.active .container .menu {
+        border: none;
+    }
+
+    nav.active .container .menu::before {
+        transform: rotate(-135deg);
+    }
+
+    nav.active .container .menu::after {
+        margin-top: -3px;
+        margin-left: 0;
+        width: 45px;
+        transform: rotate(135deg);
+    }
+
+    nav .container ul {
+        background-color: var(--salmao);
+        display: block;
+        position: absolute;
+        top: 8em;
+        right: 0;
+        width: 100%;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        z-index: 1000;
+        transition: .6s ease-in-out;
+    }
+
+    nav.active .container ul {
+        height: calc(100vh - 8em);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    nav .container ul li {
+        margin: 20px 10px 0;
+        border-bottom: 2px solid var(--vermelho);
+    }
+
+    nav .container ul li a {
+        display: block;
+        width: 100%;
+    }
+
+    nav .container ul li a:hover {
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    footer .container img {
+        display: none;
+    }
+
+    footer .container ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer .container ul li {
+        margin: 0;
+    }
+
+    footer .container ul li img {
+        display: block;
     }
 }
 
@@ -321,22 +392,5 @@ footer .container ul li {
 
     #acessorios .container .container-card .card p {
         font-size: 1.2em;
-    }
-
-    footer .container img {
-        display: none;
-    }
-
-    footer .container ul {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    footer .container ul li {
-        margin: 0;
-    }
-
-    footer .container ul li img {
-        display: block;
     }
 }
