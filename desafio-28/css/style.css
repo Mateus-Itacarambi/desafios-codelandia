@@ -448,6 +448,7 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
     }
 
     .nav-itens .menu-close{
+        height: 15vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -593,6 +594,11 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
 
     nav, header, #ultimas-noticias, #container-footer{
     padding: 1rem;
+    }
+
+    .nav-itens .menu-close{
+        padding: 1em;
+
     }
 
     header p{
