@@ -68,6 +68,10 @@ nav{
     justify-content: end;
 }
 
+.nav-itens .menu-close{
+    display: none;
+}
+
 #ul-nav{
     display: flex;
     list-style-type: none;
@@ -433,7 +437,7 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
         display: block;
         position: absolute;
         width: 100%;
-        top: calc(15vh - 1px);
+        top: 0;
         right: 0;
         background-color: #0B1421;
         height: 0;
@@ -443,12 +447,25 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
         overflow-y: hidden;
     }
 
+    .nav-itens .menu-close{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5em;
+
+    }
+
+    .nav-itens .menu-close img{
+        width: 45px;
+
+    }
+
     .nav-itens #ul-nav{
         display: block;
     }
 
     nav.active .nav-itens{
-        height: calc(85vh + 1px);
+        height: 100vh;
         visibility: visible;
         overflow-y: auto;
     }

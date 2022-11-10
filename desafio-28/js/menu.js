@@ -1,10 +1,20 @@
 const btnMobile = document.getElementById('menu');
+const btnMobileClose = document.getElementById('menu-close');
 
-function toggleMenu(event) {
+function addMenu(event) {
     if(event.type === "touchstart") event.preventDefault();
     const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
+    nav.classList.add('active');
 }
 
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+function removeMenu(event) {
+    if(event.type === "touchstart") event.preventDefault();
+    const nav = document.getElementById('nav');
+    nav.classList.remove('active');
+}
+
+btnMobile.addEventListener('click', addMenu);
+btnMobile.addEventListener('touchstart', addMenu);
+
+btnMobileClose.addEventListener('click', removeMenu);
+btnMobileClose.addEventListener('touchstart', removeMenu);
