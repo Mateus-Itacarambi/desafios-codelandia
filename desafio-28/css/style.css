@@ -428,11 +428,6 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
         justify-content: space-between;
     }
 
-    nav.active{
-        background-color: #0B1421;
-        transition: 0s;
-    }
-
     .nav-itens{
         display: block;
         position: absolute;
@@ -442,7 +437,7 @@ header h1, header p, header button, #ultimo-jogo, #card-bem-vindo, #ultimas-noti
         background-color: #0B1421;
         height: 0;
         z-index: 999;
-        transition: .6s;
+        transition: .6s ease-in-out;
         visibility: hidden;
         overflow-y: hidden;
     }
